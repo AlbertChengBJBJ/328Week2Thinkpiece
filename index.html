@@ -3,38 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
+    <title>LunarVoyage - Earth-Moon Shuttle</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Welcome to Our Website</h1>
-            <p>Example content goes here.</p>
-        </section>
-        <section class="content">
-            <article>
-                <h2>Article 1</h2>
-                <p>More example content goes here.</p>
-            </article>
-            <article>
-                <h2>Article 2</h2>
-                <p>Even more example content goes here.</p>
-            </article>
-        </section>
-    </main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>LunarVoyage</h1>
+            <p>Experience the Future of Travel</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At LunarVoyage, we are pioneering the next frontier of travel with our state-of-the-art Earth-Moon shuttles. Join us on a journey like no other and explore the wonders of the Moon.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="service1.jpg" alt="Luxury Shuttle">
+                <h3>Luxury Shuttle</h3>
+                <p>Travel in style with our luxurious shuttles equipped with all the comforts of home.</p>
+            </div>
+            <div class="card">
+                <img src="service2.jpg" alt="Economy Shuttle">
+                <h3>Economy Shuttle</h3>
+                <p>Affordable travel options for everyone without compromising on safety and comfort.</p>
+            </div>
+            <div class="card">
+                <img src="service3.jpg" alt="Cargo Transport">
+                <h3>Cargo Transport</h3>
+                <p>Reliable and efficient cargo transport services to and from the Moon.</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"An unforgettable experience! LunarVoyage made my dream of visiting the Moon come true."</p>
+                <h4>John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Top-notch service and a smooth journey. Highly recommend LunarVoyage."</p>
+                <h4>Jane Smith</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Efficient and professional. LunarVoyage is the future of space travel."</p>
+                <h4>Emily Johnson</h4>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need more information? Reach out to us and we'll be happy to assist you.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2024 Responsive Website. All rights reserved.</p>
+        <p>&copy; 2024 LunarVoyage. All rights reserved.</p>
     </footer>
 </body>
 </html>
