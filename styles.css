@@ -12,12 +12,17 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background: #000;
 }
 
 header {
-    background: #000;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -35,19 +40,29 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    height: 600px;
+    position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     text-align: center;
-    padding: 20px;
+}
+
+#heroVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-radius: 10px;
 }
 
 .hero h1 {
@@ -61,6 +76,7 @@ nav ul li a {
 section {
     padding: 60px 20px;
     text-align: center;
+    margin-top: 60px; /* To offset fixed header */
 }
 
 .about, .services, .testimonials, .contact {
@@ -81,12 +97,14 @@ section {
     flex: 1 1 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+    border-radius: 10px;
 }
 
 .card img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .contact form {
@@ -101,6 +119,7 @@ section {
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact button {
@@ -110,6 +129,7 @@ section {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {
@@ -125,9 +145,6 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
-    }
-    .hero {
-        height: 300px;
     }
     .hero h1 {
         font-size: 2em;
@@ -146,9 +163,6 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .hero {
-        height: 400px;
-    }
     .hero h1 {
         font-size: 2.5em;
     }
@@ -164,9 +178,6 @@ footer {
 
 /* Desktops and larger screens */
 @media (min-width: 901px) {
-    .hero {
-        height: 600px;
-    }
     .hero h1 {
         font-size: 3em;
     }
